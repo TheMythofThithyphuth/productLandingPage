@@ -7,9 +7,14 @@
 .header {
     display: flex;
     justify-content: space-between;
-    background-color:#1f1e1e;
+    background-color:#181616; 
+    /* compare
+        #1f1e1e */
     align-items: center;
     color: white;
+    position: sticky;
+    top: 0;
+    /* align-self: flex-start; */
     
 }
 
@@ -23,13 +28,15 @@
     display: flex;
     align-items: center;
     padding: 15px;
-    gap: 30px
+    gap: 20px;
 }
 
 .site-title {
     font-weight: 100;
     font-style: italic;
     font-size: 40px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
 }
 
 .nav-links {
@@ -48,6 +55,39 @@
 .nav-links li a:hover {
     text-decoration: underline;
     
+}
+
+.main {
+    background-color: #202020;
+    /* compare 
+        #272727 */
+    color: rgb(243, 235, 235);
+}
+
+.main * {
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    background-color:#181616; 
+    color: white;
+}
+
+.footer > div {
+    padding: 15px;
+}
+
+.fa {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+
+
+}
+
+.contact-info-div * {
+    margin: 5px 0;
 }
 
 
