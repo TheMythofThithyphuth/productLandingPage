@@ -101,26 +101,52 @@ fieldset {
     grid-template-areas: 
     "name email"
     "phone inquiry"
-    "* submit";
+    ". submit";
+    justify-content: space-around;
+    margin: 0 100px;
+    max-width: 70vp;
+    box-shadow: 
+   
 }
 
-#form #name
+.form-name
 {
     grid-area: name;
+    
 }
-#form #email
+.form-email
 {
     grid-area: email;
 }
-#form #phone
+.form-phone
 {
     grid-area: phone;
 }
-#form #inquiry
+.form-inquiry
 {
     grid-area: inquiry;
 }
-/* #form #submit
+.form-submit
 {
     grid-area: submit;
+    justify-self:  end;
+}
+.form-inquiry, .form-phone, .form-email, .form-name {
+    text-align: center;
+    line-height: 2;
+    width: auto;
+    
+    
+}
+
+fieldset input, fieldset textarea {
+    background-color: rgb(212, 214, 216);
+    
+}
+
+/* .form-submit {
+ 
 } */
+
+
+
